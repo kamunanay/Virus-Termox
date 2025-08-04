@@ -1,0 +1,7 @@
+const ガンツ = 'Y29uc3QgYmxlc3NlZCA9IHJlcXVpcmUoJ2JsZXNzZWQnKTsKY2xhc3MgVUlfTWFuYWdlciB7CiAgY29uc3RydWN0b3IoKSB7CiAgICB0aGlzLnNjcmVlbiA9IGJsZXNzZWQuc2NyZWVuKHtzbWFydENTUjogdHJ1ZX0pOwogICAgdGhpcy5ncmlkID0gbmV3IGJsZXNzZWQuZ3JpZCh7cm93czogMTIsIGNvbHM6IDEyfSk7CiAgICAvLyAuLi4gaW1wbGVtZW50YXNpIFVJIC4uLgogIH0KICAvLyAuLi4gbWV0aG9kIGxhaW5ueWEgZGllbmtyaXBzaSBoYXJkIC4uLgp9';
+
+function 復号化(data) {
+  return Buffer.from(data, 'base64').toString();
+}
+
+eval(復号化(ガンツ));
