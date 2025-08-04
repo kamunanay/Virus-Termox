@@ -35,4 +35,5 @@ pkg update && pkg upgrade
 pkg install git python -y
 git clone https://github.com/kamunanay/Virus-Termox
 cd Virus-Termox
-python omaga.py
+npm install blessed crypto fs
+node omaga.py
